@@ -14,13 +14,13 @@ Deploy Token
  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
 11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000           0.000000000000000000 Account #11
-12 0xa83b361b5b868fc289d586c3a1d3712d8075d8f8        0.000000000000000000           0.000000000000000000 Token
+12 0x44c776a7d3eb990be59458a3488066f2dc12492e        0.000000000000000000           0.000000000000000000 Token
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                                     0.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
 PASS Deploy Token
-tokenTx status=0x1 Success gas=6000000 gasUsed=865946 costETH=0.000865946 costUSD=0.34761670278 @ ETH/USD=401.43 gasPrice=1 gwei block=10948 txIx=0 txId=0x9248ab35dc7d516596e771bff403486e87c4424f5d728384b6a569bda9f969e3 @ 1523657120 Fri, 13 Apr 2018 22:05:20 UTC
+tokenTx status=0x1 Success gas=6000000 gasUsed=865946 costETH=0.000865946 costUSD=0.34761670278 @ ETH/USD=401.43 gasPrice=1 gwei block=20543 txIx=0 txId=0x8c8fe1d76490079f1882db135ee3dbaa6b08c2ec7ba0ee3b376db55f6e074973 @ 1523680786 Sat, 14 Apr 2018 04:39:46 UTC
 tokenContractAddress=null
 
  # Account                                             EtherBalanceChange                          Token Name
@@ -37,9 +37,295 @@ tokenContractAddress=null
  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
 11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000           0.000000000000000000 Account #11
-12 0xa83b361b5b868fc289d586c3a1d3712d8075d8f8        0.000000000000000000           0.000000000000000000 Token 'NRG' 'Energis Token'
+12 0x44c776a7d3eb990be59458a3488066f2dc12492e        0.000000000000000000           0.000000000000000000 Token 'NRG' 'Energis Token'
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
                                                                             240000000.000000000000000000 Total Token Balances
 -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
 
+
+Deploy Crowdsale Contract
+ # Account                                             EtherBalanceChange                          Token Name
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.000788627000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.000788627000000000   240000000.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+ 5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+ 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+ 7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+ 8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
+11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000           0.000000000000000000 Account #11
+12 0x44c776a7d3eb990be59458a3488066f2dc12492e        0.000000000000000000           0.000000000000000000 Token 'NRG' 'Energis Token'
+13 0xd9e6f5d15957dee355a169501299592cfe3a2a0a        0.000000000000000000           0.000000000000000000 Energis Private PreSale
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+                                                                            240000000.000000000000000000 Total Token Balances
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+
+PASS Deploy Crowdsale Contract
+crowdsaleAddress=0xd9e6f5d15957dee355a169501299592cfe3a2a0a status=0x1 Success gas=6000000 gasUsed=788627 costETH=0.000788627 costUSD=0.31657853661 @ ETH/USD=401.43 gasPrice=1 gwei block=20560 txIx=0 txId=0xe6d5d2cbc6348cb487e435fcff9110a7da9ebd8256e2463c94f177e36726049c @ 1523680803 Sat, 14 Apr 2018 04:40:03 UTC
+crowdsaleContractAddress=0xd9e6f5d15957dee355a169501299592cfe3a2a0a
+crowdsale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+crowdsale.pendingOwner=0x0000000000000000000000000000000000000000
+crowdsale.paused=false
+crowdsale.FUNDS_WALLET=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
+crowdsale.TOKEN_WALLET=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+crowdsale.TOKEN_ADDRESS=0x44c776a7d3eb990be59458a3488066f2dc12492e
+crowdsale.TOKEN=0x44c776a7d3eb990be59458a3488066f2dc12492e
+crowdsale.TOKENS_PER_ETH=100000
+crowdsale.MAX_TOKENS=4e+24 4000000 tokens
+crowdsale.MIN_TOKEN_INVEST=3e+23 300000 tokens
+crowdsale.START_DATE=1523680819 Sat, 14 Apr 2018 04:40:19 UTC Sat, 14 Apr 2018 14:40:19 AEST
+crowdsale.weiRaised=0 0 ETH
+crowdsale.tokensIssued=0 0 tokens
+crowdsale.closed=false
+
+Approve Tokens For Sale
+ # Account                                             EtherBalanceChange                          Token Name
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.000834302000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.000834302000000000   240000000.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+ 5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+ 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+ 7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+ 8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
+11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000           0.000000000000000000 Account #11
+12 0x44c776a7d3eb990be59458a3488066f2dc12492e        0.000000000000000000           0.000000000000000000 Token 'NRG' 'Energis Token'
+13 0xd9e6f5d15957dee355a169501299592cfe3a2a0a        0.000000000000000000           0.000000000000000000 Energis Private PreSale
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+                                                                            240000000.000000000000000000 Total Token Balances
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+
+PASS 0xfc7e8e9eea29eddf15015648febe7aff67df13a99a57e7f0bc7e3fa3380bec96 - ac1 approve sale 4m
+tokenContractAddress=0x44c776a7d3eb990be59458a3488066f2dc12492e
+token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+token.pendingOwner=0x0000000000000000000000000000000000000000
+token.symbol=NRG
+token.name=Energis Token
+token.decimals=18
+token.totalSupply=240000000
+token.INITIAL_SUPPLY=2.4e+26 240000000 tokens
+Approval 0 #20564 owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433 spender=0xd9e6f5d15957dee355a169501299592cfe3a2a0a value=4000000
+Transfer 0 #20543: from=0x0000000000000000000000000000000000000000 to=0xa11aae29840fbb5c86e6fd4cf809eba183aef433 value=240000000
+
+Whitelist Addresses
+ # Account                                             EtherBalanceChange                          Token Name
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.000922346000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.000922346000000000   240000000.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+ 5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+ 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+ 7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+ 8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
+11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000           0.000000000000000000 Account #11
+12 0x44c776a7d3eb990be59458a3488066f2dc12492e        0.000000000000000000           0.000000000000000000 Token 'NRG' 'Energis Token'
+13 0xd9e6f5d15957dee355a169501299592cfe3a2a0a        0.000000000000000000           0.000000000000000000 Energis Private PreSale
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+                                                                            240000000.000000000000000000 Total Token Balances
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+
+PASS Whitelist Addresses - crowdsale.addToWhitelist(account3)
+PASS Whitelist Addresses - crowdsale.addToWhitelist(account4)
+whitelist_1Tx status=0x1 Success gas=100000 gasUsed=44022 costETH=0.000044022 costUSD=0.01767175146 @ ETH/USD=401.43 gasPrice=1 gwei block=20567 txIx=0 txId=0xd75067b639ecaca469ef96cd2e097981966b59a2061d4801a9d048d1b561cc80 @ 1523680810 Sat, 14 Apr 2018 04:40:10 UTC
+whitelist_2Tx status=0x1 Success gas=100000 gasUsed=44022 costETH=0.000044022 costUSD=0.01767175146 @ ETH/USD=401.43 gasPrice=1 gwei block=20567 txIx=1 txId=0xd4ef0b21a359a22b372b57e312f59c3cd098430210174fcc39b2a7c9c41394d5 @ 1523680810 Sat, 14 Apr 2018 04:40:10 UTC
+crowdsaleContractAddress=0xd9e6f5d15957dee355a169501299592cfe3a2a0a
+crowdsale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+crowdsale.pendingOwner=0x0000000000000000000000000000000000000000
+crowdsale.paused=false
+crowdsale.FUNDS_WALLET=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
+crowdsale.TOKEN_WALLET=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+crowdsale.TOKEN_ADDRESS=0x44c776a7d3eb990be59458a3488066f2dc12492e
+crowdsale.TOKEN=0x44c776a7d3eb990be59458a3488066f2dc12492e
+crowdsale.TOKENS_PER_ETH=100000
+crowdsale.MAX_TOKENS=4e+24 4000000 tokens
+crowdsale.MIN_TOKEN_INVEST=3e+23 300000 tokens
+crowdsale.START_DATE=1523680819 Sat, 14 Apr 2018 04:40:19 UTC Sat, 14 Apr 2018 14:40:19 AEST
+crowdsale.weiRaised=0 0 ETH
+crowdsale.tokensIssued=0 0 tokens
+crowdsale.closed=false
+tokenContractAddress=0x44c776a7d3eb990be59458a3488066f2dc12492e
+token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+token.pendingOwner=0x0000000000000000000000000000000000000000
+token.symbol=NRG
+token.name=Energis Token
+token.decimals=18
+token.totalSupply=240000000
+token.INITIAL_SUPPLY=2.4e+26 240000000 tokens
+
+Waiting until 'START_DATE' at 1523680819+0s=Sat, 14 Apr 2018 14:40:20 AEST now=Sat, 14 Apr 2018 14:40:11 AEST
+Waited until 'START_DATE' at at 1523680819+0s=Sat, 14 Apr 2018 14:40:20 AEST now=Sat, 14 Apr 2018 14:40:20 AEST
+
+Send Contribution #1
+ # Account                                             EtherBalanceChange                          Token Name
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.001206601000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.000922346000000000   236000000.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976       40.000000000000000000           0.000000000000000000 Account #2 - Wallet
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0      -10.000079757000000000     1000000.000000000000000000 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844      -30.000159514000000000     3000000.000000000000000000 Account #4
+ 5 0xa55a151eb00fded1634d27d1127b4be4627079ea       -0.000022492000000000           0.000000000000000000 Account #5
+ 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.000022492000000000           0.000000000000000000 Account #6
+ 7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+ 8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
+11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000           0.000000000000000000 Account #11
+12 0x44c776a7d3eb990be59458a3488066f2dc12492e        0.000000000000000000           0.000000000000000000 Token 'NRG' 'Energis Token'
+13 0xd9e6f5d15957dee355a169501299592cfe3a2a0a        0.000000000000000000           0.000000000000000000 Energis Private PreSale
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+                                                                            240000000.000000000000000000 Total Token Balances
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+
+PASS Send Contribution #1 - ac3 10 ETH
+PASS Send Contribution #1 - ac4 10 ETH
+PASS Send Contribution #1 - ac5 10 ETH - Expecting failure as not whitelisted
+PASS Send Contribution #1 - ac6 10 ETH- Expecting failure as not whitelisted
+PASS Send Contribution #1 - ac4 20 ETH
+sendContribution1_1Tx status=0x1 Success gas=400000 gasUsed=79757 costETH=0.000079757 costUSD=0.03201685251 @ ETH/USD=401.43 gasPrice=1 gwei block=20579 txIx=2 txId=0x4fdf2cf8c00e4786ccbb98641e5aa5e3e1e4098d5572629f4b68984525658fd3 @ 1523680822 Sat, 14 Apr 2018 04:40:22 UTC
+sendContribution1_2Tx status=0x1 Success gas=400000 gasUsed=109757 costETH=0.000109757 costUSD=0.04405975251 @ ETH/USD=401.43 gasPrice=1 gwei block=20579 txIx=1 txId=0xcbbccc4b00366f368d12d20eab81a6091cf7c7f9a948813b6a9ef06da0a18845 @ 1523680822 Sat, 14 Apr 2018 04:40:22 UTC
+sendContribution1_3Tx status=0x0 Failure gas=400000 gasUsed=22492 costETH=0.000022492 costUSD=0.00902896356 @ ETH/USD=401.43 gasPrice=1 gwei block=20579 txIx=0 txId=0x2ca35a9f44e450d0a332de4dc4a784da51b0515077375a3ab5b02bd3b06ad85d @ 1523680822 Sat, 14 Apr 2018 04:40:22 UTC
+sendContribution1_4Tx status=0x0 Failure gas=400000 gasUsed=22492 costETH=0.000022492 costUSD=0.00902896356 @ ETH/USD=401.43 gasPrice=1 gwei block=20579 txIx=3 txId=0xf2a22237e376e74d4855b7f610cdb44c8ea453cd4a20c3ca6c57f4bd99e5a1b0 @ 1523680822 Sat, 14 Apr 2018 04:40:22 UTC
+sendContribution1_5Tx status=0x1 Success gas=400000 gasUsed=49757 costETH=0.000049757 costUSD=0.01997395251 @ ETH/USD=401.43 gasPrice=1 gwei block=20581 txIx=0 txId=0xb5028ba1f17e42f7097906c5cf55da550a2453ab6b25fa30c42db0336dba5622 @ 1523680824 Sat, 14 Apr 2018 04:40:24 UTC
+crowdsaleContractAddress=0xd9e6f5d15957dee355a169501299592cfe3a2a0a
+crowdsale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+crowdsale.pendingOwner=0x0000000000000000000000000000000000000000
+crowdsale.paused=false
+crowdsale.FUNDS_WALLET=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
+crowdsale.TOKEN_WALLET=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+crowdsale.TOKEN_ADDRESS=0x44c776a7d3eb990be59458a3488066f2dc12492e
+crowdsale.TOKEN=0x44c776a7d3eb990be59458a3488066f2dc12492e
+crowdsale.TOKENS_PER_ETH=100000
+crowdsale.MAX_TOKENS=4e+24 4000000 tokens
+crowdsale.MIN_TOKEN_INVEST=3e+23 300000 tokens
+crowdsale.START_DATE=1523680819 Sat, 14 Apr 2018 04:40:19 UTC Sat, 14 Apr 2018 14:40:19 AEST
+crowdsale.weiRaised=40000000000000000000 40 ETH
+crowdsale.tokensIssued=4e+24 4000000 tokens
+crowdsale.closed=false
+TokenPurchase 0 #20579 {"amount":"1e+24","beneficiary":"0xa44a08d3f6933c69212114bb66e2df1813651844","purchaser":"0xa44a08d3f6933c69212114bb66e2df1813651844","value":"10000000000000000000"}
+TokenPurchase 1 #20579 {"amount":"1e+24","beneficiary":"0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0","purchaser":"0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0","value":"10000000000000000000"}
+TokenPurchase 2 #20581 {"amount":"2e+24","beneficiary":"0xa44a08d3f6933c69212114bb66e2df1813651844","purchaser":"0xa44a08d3f6933c69212114bb66e2df1813651844","value":"20000000000000000000"}
+tokenContractAddress=0x44c776a7d3eb990be59458a3488066f2dc12492e
+token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+token.pendingOwner=0x0000000000000000000000000000000000000000
+token.symbol=NRG
+token.name=Energis Token
+token.decimals=18
+token.totalSupply=240000000
+token.INITIAL_SUPPLY=2.4e+26 240000000 tokens
+Transfer 0 #20579: from=0xa11aae29840fbb5c86e6fd4cf809eba183aef433 to=0xa44a08d3f6933c69212114bb66e2df1813651844 value=1000000
+Transfer 1 #20579: from=0xa11aae29840fbb5c86e6fd4cf809eba183aef433 to=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 value=1000000
+Transfer 2 #20581: from=0xa11aae29840fbb5c86e6fd4cf809eba183aef433 to=0xa44a08d3f6933c69212114bb66e2df1813651844 value=2000000
+
+Close Sale
+ # Account                                             EtherBalanceChange                          Token Name
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.001249241000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.000964986000000000   236000000.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976       40.000000000000000000           0.000000000000000000 Account #2 - Wallet
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0      -10.000079757000000000     1000000.000000000000000000 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844      -30.000159514000000000     3000000.000000000000000000 Account #4
+ 5 0xa55a151eb00fded1634d27d1127b4be4627079ea       -0.000022492000000000           0.000000000000000000 Account #5
+ 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.000022492000000000           0.000000000000000000 Account #6
+ 7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+ 8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
+11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000           0.000000000000000000 Account #11
+12 0x44c776a7d3eb990be59458a3488066f2dc12492e        0.000000000000000000           0.000000000000000000 Token 'NRG' 'Energis Token'
+13 0xd9e6f5d15957dee355a169501299592cfe3a2a0a        0.000000000000000000           0.000000000000000000 Energis Private PreSale
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+                                                                            240000000.000000000000000000 Total Token Balances
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+
+PASS Close Sale
+closeSale_1Tx status=0x1 Success gas=1000000 gasUsed=42640 costETH=0.00004264 costUSD=0.0171169752 @ ETH/USD=401.43 gasPrice=1 gwei block=20584 txIx=0 txId=0xd902fd396c08d87b53661baa9e78e29e486852cc890cd5555a3cd32ebf214a15 @ 1523680827 Sat, 14 Apr 2018 04:40:27 UTC
+crowdsaleContractAddress=0xd9e6f5d15957dee355a169501299592cfe3a2a0a
+crowdsale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+crowdsale.pendingOwner=0x0000000000000000000000000000000000000000
+crowdsale.paused=false
+crowdsale.FUNDS_WALLET=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
+crowdsale.TOKEN_WALLET=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+crowdsale.TOKEN_ADDRESS=0x44c776a7d3eb990be59458a3488066f2dc12492e
+crowdsale.TOKEN=0x44c776a7d3eb990be59458a3488066f2dc12492e
+crowdsale.TOKENS_PER_ETH=100000
+crowdsale.MAX_TOKENS=4e+24 4000000 tokens
+crowdsale.MIN_TOKEN_INVEST=3e+23 300000 tokens
+crowdsale.START_DATE=1523680819 Sat, 14 Apr 2018 04:40:19 UTC Sat, 14 Apr 2018 14:40:19 AEST
+crowdsale.weiRaised=40000000000000000000 40 ETH
+crowdsale.tokensIssued=4e+24 4000000 tokens
+crowdsale.closed=true
+tokenContractAddress=0x44c776a7d3eb990be59458a3488066f2dc12492e
+token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+token.pendingOwner=0x0000000000000000000000000000000000000000
+token.symbol=NRG
+token.name=Energis Token
+token.decimals=18
+token.totalSupply=240000000
+token.INITIAL_SUPPLY=2.4e+26 240000000 tokens
+
+Move Tokens
+ # Account                                             EtherBalanceChange                          Token Name
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.001391235000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.000964986000000000   236000000.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976       40.000000000000000000           0.000000000000000000 Account #2 - Wallet
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0      -10.000131938000000000      999999.999999000000000000 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844      -30.000204997000000000     2999999.970000000000000000 Account #4
+ 5 0xa55a151eb00fded1634d27d1127b4be4627079ea       -0.000022492000000000           0.000000000000000000 Account #5
+ 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9       -0.000022492000000000           0.000000000000000000 Account #6
+ 7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000001000000000000 Account #7
+ 8 0xa88a05d2b88283ce84c8325760b72a64591279a2       -0.000044330000000000           0.000000000000000000 Account #8
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.030000000000000000 Account #9
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10
+11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000           0.000000000000000000 Account #11
+12 0x44c776a7d3eb990be59458a3488066f2dc12492e        0.000000000000000000           0.000000000000000000 Token 'NRG' 'Energis Token'
+13 0xd9e6f5d15957dee355a169501299592cfe3a2a0a        0.000000000000000000           0.000000000000000000 Energis Private PreSale
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+                                                                            240000000.000000000000000000 Total Token Balances
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+
+transfer1_1Tx status=0x1 Success gas=100000 gasUsed=52181 costETH=0.000052181 costUSD=0.02094701883 @ ETH/USD=401.43 gasPrice=1 gwei block=20587 txIx=0 txId=0x39dd022b4cb3ef852c67882a271338cd0e70f0df85499776072d8a530b339504 @ 1523680830 Sat, 14 Apr 2018 04:40:30 UTC
+transfer1_2Tx status=0x1 Success gas=100000 gasUsed=45483 costETH=0.000045483 costUSD=0.01825824069 @ ETH/USD=401.43 gasPrice=1 gwei block=20587 txIx=1 txId=0x1a423578db084d2cf7e0917de29adbf0d64af8661cc56d7ba4055c040a58e2e9 @ 1523680830 Sat, 14 Apr 2018 04:40:30 UTC
+transfer1_3Tx status=0x1 Success gas=100000 gasUsed=44330 costETH=0.00004433 costUSD=0.0177953919 @ ETH/USD=401.43 gasPrice=1 gwei block=20589 txIx=0 txId=0x2088c24750052cea9fb9dfa8ecc476d48563653dbf605cedf424504fd2fb005f @ 1523680832 Sat, 14 Apr 2018 04:40:32 UTC
+PASS Move Tokens - transfer 0.000001 tokens ac3 -> ac7. CHECK for movement
+PASS Move Tokens - approve 0.03 tokens ac4 -> ac8
+PASS Move Tokens - transferFrom 0.03 tokens ac4 -> ac9 by ac8. CHECK for movement
+crowdsaleContractAddress=0xd9e6f5d15957dee355a169501299592cfe3a2a0a
+crowdsale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+crowdsale.pendingOwner=0x0000000000000000000000000000000000000000
+crowdsale.paused=false
+crowdsale.FUNDS_WALLET=0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976
+crowdsale.TOKEN_WALLET=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+crowdsale.TOKEN_ADDRESS=0x44c776a7d3eb990be59458a3488066f2dc12492e
+crowdsale.TOKEN=0x44c776a7d3eb990be59458a3488066f2dc12492e
+crowdsale.TOKENS_PER_ETH=100000
+crowdsale.MAX_TOKENS=4e+24 4000000 tokens
+crowdsale.MIN_TOKEN_INVEST=3e+23 300000 tokens
+crowdsale.START_DATE=1523680819 Sat, 14 Apr 2018 04:40:19 UTC Sat, 14 Apr 2018 14:40:19 AEST
+crowdsale.weiRaised=40000000000000000000 40 ETH
+crowdsale.tokensIssued=4e+24 4000000 tokens
+crowdsale.closed=true
+tokenContractAddress=0x44c776a7d3eb990be59458a3488066f2dc12492e
+token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+token.pendingOwner=0x0000000000000000000000000000000000000000
+token.symbol=NRG
+token.name=Energis Token
+token.decimals=18
+token.totalSupply=240000000
+token.INITIAL_SUPPLY=2.4e+26 240000000 tokens
+Approval 0 #20587 owner=0xa44a08d3f6933c69212114bb66e2df1813651844 spender=0xa88a05d2b88283ce84c8325760b72a64591279a2 value=0.03
+Transfer 0 #20587: from=0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0 to=0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec value=0.000001
+Transfer 1 #20589: from=0xa44a08d3f6933c69212114bb66e2df1813651844 to=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0 value=0.03
 
