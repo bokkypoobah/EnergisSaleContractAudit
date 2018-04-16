@@ -9,7 +9,8 @@ Bok Consulting Pty Ltd was commissioned to perform an audit on the Ethereum smar
 This audit has been conducted on Zero Carbon Project's private presale contract source code in commit
 [9b956af](https://github.com/zerocarbonproject/energis-sale/commit/9b956aff9064628ad688ade8d3df7d2078cf1dc0).
 
-This contract also depends on the token contract in commit [https://github.com/zerocarbonproject/energis-token/blob/fe6b8c45025cd2b99333fa0c29189975476ca8ed/contracts_flat/EnergisToken.sol](https://github.com/zerocarbonproject/energis-token/blob/fe6b8c45025cd2b99333fa0c29189975476ca8ed/contracts_flat/EnergisToken.sol) and this was audited at the same time.
+This contract also depends on the token contract in commit [https://github.com/zerocarbonproject/energis-token/blob/fe6b8c45025cd2b99333fa0c29189975476ca8ed/contracts_flat/EnergisToken.sol](https://github.com/zerocarbonproject/energis-token/blob/fe6b8c45025cd2b99333fa0c29189975476ca8ed/contracts_flat/EnergisToken.sol) and this was audited at the same time. This audit has been updated to include
+the latest commit [https://github.com/zerocarbonproject/energis-token/blob/05dae6c74cf55e8f77abf5366657a39ae114be41/contracts_flat/EnergisToken.sol](https://github.com/zerocarbonproject/energis-token/blob/05dae6c74cf55e8f77abf5366657a39ae114be41/contracts_flat/EnergisToken.sol) of the token contract.
 
 No potential vulnerabilities have been identified in the private presale and token contracts.
 
@@ -118,7 +119,7 @@ in [test/test1results.txt](test/test1results.txt) and the detailed output saved 
 
 ## Code Review
 
-From [https://github.com/zerocarbonproject/energis-token/blob/fe6b8c45025cd2b99333fa0c29189975476ca8ed/contracts_flat/EnergisToken.sol](https://github.com/zerocarbonproject/energis-token/blob/fe6b8c45025cd2b99333fa0c29189975476ca8ed/contracts_flat/EnergisToken.sol):
+From [https://github.com/zerocarbonproject/energis-token/blob/05dae6c74cf55e8f77abf5366657a39ae114be41/contracts_flat/EnergisToken.sol](https://github.com/zerocarbonproject/energis-token/blob/05dae6c74cf55e8f77abf5366657a39ae114be41/contracts_flat/EnergisToken.sol):
 
 * [x] [code-review/EnergisToken.md](code-review/EnergisToken.md)
   * [x] contract Ownable
@@ -127,9 +128,10 @@ From [https://github.com/zerocarbonproject/energis-token/blob/fe6b8c45025cd2b993
   * [x] contract ERC20Basic
   * [x] contract BasicToken is ERC20Basic
     * [x] using SafeMath for uint256;
+  * [x] contract BurnableToken is BasicToken
   * [x] contract ERC20 is ERC20Basic
   * [x] contract StandardToken is ERC20, BasicToken
-  * [x] contract EnergisToken is StandardToken, Claimable
+  * [x] contract EnergisToken is StandardToken, Claimable, BurnableToken
     * [x] using SafeMath for uint256;
 
 <br />
@@ -151,4 +153,4 @@ From this repository:
 
 <br />
 
-(c) BokkyPooBah / Bok Consulting Pty Ltd for Zero Carbon Project - Apr 14 2018. The MIT Licence.
+(c) BokkyPooBah / Bok Consulting Pty Ltd for Zero Carbon Project - Apr 17 2018. The MIT Licence.

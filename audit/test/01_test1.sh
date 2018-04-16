@@ -189,11 +189,11 @@ var approveTokensForSale_Message = "Approve Tokens For Sale";
 var tokensForSale = "4000000000000000000000000";
 // -----------------------------------------------------------------------------
 console.log("RESULT: " + approveTokensForSale_Message);
-var approveTokensForSale_1Tx = token.approve(crowdsaleAddress, tokensForSale, {from: contractOwnerAccount, gas: 1000000, gasPrice: defaultGasPrice});
+var transferToAirdropper_1Tx = token.approve(crowdsaleAddress, tokensForSale, {from: contractOwnerAccount, gas: 1000000, gasPrice: defaultGasPrice});
 while (txpool.status.pending > 0) {
 }
 printBalances();
-failIfTxStatusError(approveTokensForSale_1Tx, approveTokensForSale_1Tx + " - ac1 approve sale 4m");
+failIfTxStatusError(transferToAirdropper_1Tx, transferToAirdropper_1Tx + " - ac1 approve sale 4m");
 printTxData("transferToAirdropper_1Tx", transferToAirdropper_1Tx);
 printTokenContractDetails();
 console.log("RESULT: ");
@@ -282,6 +282,21 @@ printTxData("transfer1_3Tx", transfer1_3Tx);
 failIfTxStatusError(transfer1_1Tx, transfer1_Message + " - transfer 0.000001 tokens ac3 -> ac7. CHECK for movement");
 failIfTxStatusError(transfer1_2Tx, transfer1_Message + " - approve 0.03 tokens ac4 -> ac8");
 failIfTxStatusError(transfer1_3Tx, transfer1_Message + " - transferFrom 0.03 tokens ac4 -> ac9 by ac8. CHECK for movement");
+printCrowdsaleContractDetails();
+printTokenContractDetails();
+console.log("RESULT: ");
+
+
+// -----------------------------------------------------------------------------
+var burnTokens_Message = "Burn Tokens";
+// -----------------------------------------------------------------------------
+console.log("RESULT: " + burnTokens_Message);
+var burnTokens_1Tx = token.burn("200000000000000", {from: account3, gas: 100000, gasPrice: defaultGasPrice});
+while (txpool.status.pending > 0) {
+}
+printBalances();
+printTxData("burnTokens_1Tx", burnTokens_1Tx);
+failIfTxStatusError(burnTokens_1Tx, burnTokens_Message + " - ac3 burn 0.0002 tokens");
 printCrowdsaleContractDetails();
 printTokenContractDetails();
 console.log("RESULT: ");

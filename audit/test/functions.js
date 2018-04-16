@@ -291,6 +291,13 @@ function printTokenContractDetails() {
     });
     ownershipTransferredEvents.stopWatching();
 
+    var burnEvents = contract.Burn({}, { fromBlock: tokenFromBlock, toBlock: latestBlock });
+    i = 0;
+    burnEvents.watch(function (error, result) {
+      console.log("RESULT: Burn " + i++ + " #" + result.blockNumber + " " + JSON.stringify(result.args));
+    });
+    burnEvents.stopWatching();
+
     var approvalEvents = contract.Approval({}, { fromBlock: tokenFromBlock, toBlock: latestBlock });
     i = 0;
     approvalEvents.watch(function (error, result) {
